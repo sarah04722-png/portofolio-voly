@@ -1,0 +1,315 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Aulia - Atlet Bola Voli & Portofolio Prestasi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Montserrat & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e40af',
+                            cyan: '#06b6d4',
+                            gold: '#f59e0b',
+                            dark: '#0f172a',
+                            lightDark: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4);
+        }
+        .glow-gold {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800/80 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white font-black text-xl shadow-lg group-hover:scale-105 transition">
+                        <i class="fa-solid fa-volleyball"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-xl tracking-wider text-white block leading-none">SARAH<span class="text-cyan-400">AULIA</span></span>
+                        <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Volleyball Player</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                    <a href="#about" class="hover:text-cyan-400 transition hover:translate-y-[-1px]">Tentang Saya</a>
+                    <a href="#stats" class="hover:text-cyan-400 transition hover:translate-y-[-1px]">Statistik & Skill</a>
+                    <a href="#trophies" class="hover:text-cyan-400 transition hover:translate-y-[-1px]">Prestasi & Trofi</a>
+                    <a href="#gallery" class="hover:text-cyan-400 transition hover:translate-y-[-1px]">Galeri</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition hover:scale-105">Hubungi Saya</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium border-b border-slate-800/50">Tentang Saya</a>
+            <a href="#stats" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium border-b border-slate-800/50">Statistik & Skill</a>
+            <a href="#trophies" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium border-b border-slate-800/50">Prestasi & Trofi</a>
+            <a href="#gallery" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium border-b border-slate-800/50">Galeri</a>
+            <a href="#contact" class="block py-2.5 text-center mt-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Grid & Glowing Orbs -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        Outside Hitter / Spiker Utama
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight uppercase leading-none">
+                        SARAH <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-400">AULIA</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Atlet Bola Voli berdedikasi tinggi dengan passion mendalam terhadap permainan, kekuatan smash presisi, dan determinasi membawa tim meraih gelar juara di setiap turnamen.
+                    </p>
+
+                    <!-- Quick Stats Badge -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="glass-card p-4 rounded-2xl text-center border-slate-800">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-amber-400 font-display">12+</span>
+                            <span class="text-xs text-slate-400 font-medium">Trofi Juara</span>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl text-center border-slate-800">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-cyan-400 font-display">285cm</span>
+                            <span class="text-xs text-slate-400 font-medium">Spike Reach</span>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl text-center border-slate-800">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-blue-400 font-display">5+ Thn</span>
+                            <span class="text-xs text-slate-400 font-medium">Pengalaman</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#trophies" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-extrabold hover:shadow-xl hover:shadow-amber-500/20 transition hover:scale-105 text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-trophy text-slate-950"></i> Lihat Koleksi Trofi
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800 text-white font-semibold transition text-center border border-slate-700 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-cyan-400"></i> Ajukan Kerjasama
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Player Card / Image Section -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Neon Glow Ring -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-600 to-amber-500 rounded-3xl blur-lg opacity-60 animate-pulse"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative rounded-3xl glass-card overflow-hidden border border-slate-700/80 p-6 flex flex-col items-center text-center">
+                            
+                            <!-- Volleyball Player Illustration Placeholder/Avatar -->
+                            <div class="relative w-full h-80 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-950 overflow-hidden flex items-center justify-center border border-slate-700/50 mb-6 group">
+                                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Sarah Aulia Volleyball" 
+                                     class="w-full h-full object-cover object-top group-hover:scale-110 transition duration-700"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x800/1e293b/38bdf8?text=Sarah+Aulia+Voli';">
+                                
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+
+                                <!-- Jersey Number Badge -->
+                                <div class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-cyan-500/40 text-cyan-400 font-display font-black text-lg">
+                                    #07
+                                </div>
+                            </div>
+
+                            <!-- Card Details -->
+                            <h3 class="text-xl font-bold font-display text-white">SARAH AULIA</h3>
+                            <p class="text-slate-400 text-sm mb-4">Outside Hitter • No. Punggung 7</p>
+
+                            <div class="w-full grid grid-cols-2 gap-2 text-xs border-t border-slate-800 pt-4">
+                                <div class="bg-slate-900/60 p-2.5 rounded-xl text-left border border-slate-800">
+                                    <span class="text-slate-400 block text-[10px]">Posisi Utama</span>
+                                    <span class="font-bold text-white">Wing Spiker</span>
+                                </div>
+                                <div class="bg-slate-900/60 p-2.5 rounded-xl text-left border border-slate-800">
+                                    <span class="text-slate-400 block text-[10px]">Tangan Dominan</span>
+                                    <span class="font-bold text-white">Kanan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-900/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="w-full h-96 rounded-3xl overflow-hidden shadow-2xl border border-slate-700">
+                            <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Volleyball Action" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x800/0f172a/06b6d4?text=Bola+Voli';">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-2xl border border-amber-500/40 glow-gold hidden sm:block">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Pemain Terbaik (MVP)</h4>
+                                    <p class="text-xs text-slate-400">Kejurda Voli 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
+                        Tentang Sarah Aulia
+                    </div>
+                    
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
+                        Kombinasi <span class="text-cyan-400">Semangat Pantang Menyerah</span> & Eksekusi Lapangan Presisi
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        Bagi saya, **Bola Voli** bukan sekadar olahraga, melainkan bentuk ekspresi, disiplin, dan kerja sama tim. Sejak pertama kali memegang bola voli, saya langsung jatuh cinta pada ritme permainan, ketenangan saat memblok smash lawan, dan kepuasan mencetak poin kemenangan.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Berpengalaman berlaga di turnamen regional hingga tingkat nasional, saya senantiasa mengasah ketajaman *spike*, *jump serve*, serta ketahanan mental di momen-momen krusial pertandingan.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-950/50 border border-slate-800">
+                            <i class="fa-solid fa-bolt text-amber-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Smash Cepat & Tajam</h4>
+                                <p class="text-xs text-slate-400">Memanfaatkan sudut lapangan kosong secara akurat.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-950/50 border border-slate-800">
+                            <i class="fa-solid fa-shield-halved text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Pertahanan Solid</h4>
+                                <p class="text-xs text-slate-400">Read & React yang responsif terhadap pukulan lawan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
+                    Statistik Physical & <span class="text-cyan-400">Atribut Skill</span>
+                </h2>
+                <p class="text-slate-400 text-sm mt-2">Atribut teknis dan performa atletik berdasarkan pengukuran performa terkini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                
+                <!-- Skill Bars -->
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border-slate-800 space-y-6">
+                    <h3 class="font-display font-bold text-xl text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-simple text-cyan-400"></i> Nilai Keterampilan Lapangan
+                    </h3>
+
+                    <!-- Skill 1 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-semibold">
+                            <span class="text-slate-300">Spike / Pukulan Attack</span>
+                            <span class="text-cyan-400">92%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-600 to-cyan-400 h-full rounded-full w-[92%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-semibold">
+                            <span class="text-slate-300">Jump Serve</span>
+                            <span class="text-cyan-400">88%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-600 to-cyan-400 h-full rounded-full w-[88%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-semibold">
+                            <span class="text-slate-300">Block Timing & Height</span>
+                            <span class="text-cyan-400">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-600 to-cyan-400 h-full rounded-full w-[85%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm font-semibold">
+                            <span class="text-slate-300">Receive & Defense</span>
+                            <span class="text-cyan-400">80%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-600 to-cyan-400 h-full rounded-full w-[80%] transition-all duration-1000"></div>
+                        </div>
+    
